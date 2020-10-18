@@ -1,12 +1,11 @@
 import React from 'react';
 import Pagination from '../pagination';
-import { createTestInstance } from '@magento/peregrine';
+import { render } from '@testing-library/react';
 
 jest.mock('@magento/venia-ui/lib/classify');
 
 test('renders correctly', () => {
-    const component = createTestInstance(
-        <Pagination pageControl={pageControl} />
-    );
-    expect(component.toJSON()).toMatchSnapshot();
+
+    const { asFragment } = render(<Pagination pages={[]} currentPage={1} />);
+    expect(asFragment()).toMatchSnapshot();
 });

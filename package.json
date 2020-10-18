@@ -8,16 +8,21 @@
     "test:dev": "jest --watch"
   },
   "dependencies": {
-    "react": "~16.9.0",
-    "react-dom": "^16.12.0",
+    "@magento/peregrine": "latest",
     "@magento/venia-ui": "latest",
-    "@magento/peregrine": "latest"
+    "identity-obj-proxy": "^3.0.0",
+    "jest-transform-graphql": "^2.1.0",
+    "react": "~16.9.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.1",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-class-properties": "^7.12.1,",
     "@testing-library/react": "^11.1.0",
-    "babel-jest": "^26.5.2",
+    "babel-jest": "lasted",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "jest": "^26.5.3",
     "react-test-renderer": "^16.14.0"
   }
