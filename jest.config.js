@@ -1,4 +1,3 @@
-
 const jestConfig = {
     transform: {
         // Reproduce the Webpack `graphql-tag/loader` that lets Venia
@@ -21,7 +20,7 @@ const jestConfig = {
     collectCoverage: true,
     collectCoverageFrom: [
         // Code directories
-        'packages/*/{src,lib,_buildpack}/**/*.js',
+        'src/**/*.js',
         // Not the create-pwa package, which requires manual testing
         '!packages/create-pwa/**/*.js',
         // Not node_modules
